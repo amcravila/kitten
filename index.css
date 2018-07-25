@@ -1,0 +1,39 @@
+html, body {
+    height:100%;
+}
+.scenery {
+  height: 100%;
+  background-image: url("sunny-day.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.kitten {
+  height: 100%;
+  background-image: url("kitten-medium.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom;
+}
+
+@media screen and (max-width: 900px) {
+  .scenery {
+    background-image: url("dawn.png");
+  }
+
+  .kitten {
+    background-image: url("kitten-large.png");
+    background-size: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scenery {
+    background-image: url("night.jpg");
+  }
+
+  .kitten {
+    background-image: url("kitten-small.png");
+    background-size: 70%;
+  }
+}
